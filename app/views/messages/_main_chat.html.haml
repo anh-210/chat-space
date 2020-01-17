@@ -1,0 +1,28 @@
+.main_chat
+  .main-header
+    .main-header__left-box
+      %p.main-header__left-box__current-group
+        tech
+      %p.main-header__left-box__member-list
+        member
+    =link_to "/" do
+      .main-header__edit-btn
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker
+          anh
+        %p.message__upper-info__date
+          2019/11/20(wed)
+      %p.message__text
+        おはよう
+  .message_form
+    %form
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
+  
