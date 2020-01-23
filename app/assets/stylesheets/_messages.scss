@@ -109,6 +109,7 @@ $color: #999999;
   .messages {
    height: calc(100vh - 190px);
    background-color: #fafafa;
+   overflow: scroll;
     .message {
       padding: 35px 0 46px 40px;
       &__upper-info {
